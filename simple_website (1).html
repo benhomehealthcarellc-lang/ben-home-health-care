@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben Home Health Care LLC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+    }
+    header {
+      background: #0f766e;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: #115e59;
+      padding: 0.75rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2.5rem 1.25rem;
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 4.5rem 1.5rem;
+      color: #ffffff;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      animation: heroFade 18s infinite;
+      z-index: -1;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15,118,110,0.75);
+      z-index: -1;
+    }
+
+    @keyframes heroFade {
+      0% {
+        opacity: 1;
+        background-image: url('nurses.jpg');
+      }
+      30% {
+        opacity: 1;
+        background-image: url('nurses.jpg');
+      }
+      33% {
+        opacity: 0;
+      }
+      36% {
+        opacity: 1;
+        background-image: url('R.jpg');
+      }
+      63% {
+        opacity: 1;
+        background-image: url('R.jpg');
+      }
+      66% {
+        opacity: 0;
+      }
+      69% {
+        opacity: 1;
+        background-image: url('R (1).jpg');
+      }
+      96% {
+        opacity: 1;
+        background-image: url('R (1).jpg');
+      }
+      100% {
+        opacity: 1;
+        background-image: url('nurses.jpg');
+      }
+    }
+
+    @keyframes heroSlider {
+      0% {
+        background: linear-gradient(rgba(15,118,110,0.75), rgba(15,118,110,0.75)),
+                    url('nurses.jpg') center/cover no-repeat;
+      }
+      33% {
+        background: linear-gradient(rgba(15,118,110,0.75), rgba(15,118,110,0.75)),
+                    url('R.jpg') center/cover no-repeat;
+      }
+      66% {
+        background: linear-gradient(rgba(15,118,110,0.75), rgba(15,118,110,0.75)),
+                    url('R (1).jpg') center/cover no-repeat;
+      }
+      100% {
+        background: linear-gradient(rgba(15,118,110,0.75), rgba(15,118,110,0.75)),
+                    url('nurses.jpg') center/cover no-repeat;
+      }
+    }
+    .hero h2 {
+      font-size: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      padding: 1.75rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+    .highlight {
+      background: #ecfeff;
+      border-left: 6px solid #0f766e;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1.75rem;
+      background: #115e59;
+      color: #fff;
+    }
+    button {
+      background: #0d9488;
+      color: #fff;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background: #0f766e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ben Home Health Care LLC</h1>
+    <p>Specialized Complex Medical Care Delivered at Home</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#coverage">Service Area</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Compassionate, Skilled Care — 24/7</h2>
+    <p>
+      Ben Home Health Care LLC provides specialized complex medical care in the comfort of individual homes throughout the metro area and surrounding regions.
+    </p>
+    <p>
+      Our highly trained team supports clients with critical medical needs while preserving dignity, comfort, and quality of life.
+    </p>
+    <button>Request Care Information</button>
+  </section>
+
+  <section id="about">
+    <h2>About Ben Home Health Care LLC</h2>
+    <p>
+      We are dedicated to delivering high-quality, patient-centered home health services for individuals with complex and chronic medical conditions.
+    </p>
+    <div class="highlight">
+      <strong>Our Mission:</strong> To provide safe, reliable, and compassionate medical care that allows clients to remain in their homes while receiving the advanced support they require.
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Specialized Services</h2>
+    <p>We support medically fragile clients with around-the-clock skilled care, including:</p>
+    <div class="services">
+      <div class="card">
+        <h3>Ventilator Care</h3>
+        <p>Expert management of ventilator-dependent clients by trained healthcare professionals.</p>
+      </div>
+      <div class="card">
+        <h3>Tracheostomy Management</h3>
+        <p>Comprehensive trach care, suctioning, monitoring, and emergency response.</p>
+      </div>
+      <div class="card">
+        <h3>PEG Tube Support</h3>
+        <p>Safe and effective feeding tube care, medication administration, and monitoring.</p>
+      </div>
+      <div class="card">
+        <h3>24/7 Day Services</h3>
+        <p>Continuous skilled nursing and support services available day and night.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="coverage">
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>24-hour private duty nursing care</li>
+      <li>Comprehensive in-home medical services</li>
+      <li>Highly trained and certified nurses</li>
+      <li>Personalized care plans for complex medical needs</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For referrals, care coordination, or general inquiries:</p>
+    <p><strong>Phone:</strong> 952-994-2020</p>
+    <p><strong>Email:</strong> benhomehealthcarellc@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Ben Home Health Care LLC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
